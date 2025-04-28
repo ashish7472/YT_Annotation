@@ -17,7 +17,9 @@ The YouTube Notes Extension is a powerful Chrome extension that allows you to ad
 
 ## Screenshots
 ![Popup Interface](screenshots/image1.png)
+
 ![Popup Interface](screenshots/image2.png)
+
 ![Popup Interface](screenshots/image3.png)
 
 ## Usage
