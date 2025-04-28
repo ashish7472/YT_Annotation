@@ -7,6 +7,7 @@ The YouTube Notes Extension is a powerful Chrome extension that allows you to ad
 - Add notes with timestamps to any YouTube video.
 - Edit or delete notes as needed.
 - Sync notes across tabs for the same video.
+- Notes can be downloaded in json file for storage purpose.
 - Simple and intuitive user interface.
 
 ## Installation
@@ -23,7 +24,7 @@ The YouTube Notes Extension is a powerful Chrome extension that allows you to ad
 ![Popup Interface](screenshots/image3.png)
 
 ## Usage
-> While watching a YouTube video, click the extension icon to open the popup. Use the interface to add, edit, or delete notes. Notes are automatically saved and synced with the video's page.
+> While watching a YouTube video, click the extension icon to open the popup. Use the interface to add, edit, or delete notes. Notes are automatically saved and synced with the video's page. And you can also export or download all the notes in json file.
 
 ## Contributing
 Contributions are welcome! Please fork this repository and submit a pull request with your changes. For major changes, please open an issue first to discuss.
