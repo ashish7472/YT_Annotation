@@ -1,0 +1,301 @@
+/* YouTube Notes Extension - Notes Manager Styles */
+
+:root {
+  --primary-color: #7b1fa2;
+  --primary-light: #ae52d4;
+  --primary-dark: #4a0072;
+  --accent-color: #e91e63;
+  --text-color: #f5f5f5;
+  --text-secondary: #bdbdbd;
+  --background-dark: #121212;
+  --background-light: #1e1e1e;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--background-dark) 0%, var(--primary-dark) 100%);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.notes-manager {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary-light);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px 16px;
+  border-radius: 24px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  margin-right: 16px;
+  width: 240px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.search-input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.videos-container {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.videos-container h2 {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-light);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.video-list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.video-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.video-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.video-item.active {
+  background-color: rgba(123, 31, 162, 0.3);
+  border-left: 3px solid var(--accent-color);
+}
+
+.video-title {
+  font-size: 14px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.video-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.notes-header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notes-header h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-light);
+}
+
+.notes-count {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.notes-list {
+  overflow-y: auto;
+  flex: 1;
+  padding: 16px;
+}
+
+.note-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note-header {
+  padding: 12px 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-timestamp {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.note-video-title {
+  font-size: 12px;
+  color: var(--text-secondary);
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-content {
+  padding: 16px;
+  line-height: 1.5;
+}
+
+.note-actions {
+  display: flex;
+  padding: 12px 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: flex-end;
+}
+
+.empty-state, .loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  outline: none;
+  margin-left: 8px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn-accent:hover {
+  background-color: #f06292;
+}
+
+.btn-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.note-card {
+  animation: fadeIn 0.3s ease, slideIn 0.3s ease;
+}

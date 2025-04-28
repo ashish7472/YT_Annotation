@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Notes</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>YouTube Notes</h1>
+    </header>
+    
+    <div class="popup-content">
+      <div id="current-video" class="current-video">
+        <div class="status-message">Open a YouTube video to add notes</div>
+      </div>
+      
+      <div id="note-stats" class="note-stats">
+        <div class="stats-container">
+          <div class="stat">
+            <span class="stat-value" id="total-notes">0</span>
+            <span class="stat-label">Total Notes</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="video-count">0</span>
+            <span class="stat-label">Videos</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="recent-notes">
+        <h2>Recent Notes</h2>
+        <div id="recent-notes-list" class="recent-notes-list">
+          <div class="empty-state">No notes yet</div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="popup-footer">
+      <button id="view-all-notes" class="btn btn-primary">View All Notes</button>
+      <button id="export-notes" class="btn btn-secondary">Export Notes</button>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Notes - YouTube Notes</title>
+  <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+  <div class="notes-manager">
+    <header class="header">
+      <h1>YouTube Notes Manager</h1>
+      <div class="header-actions">
+        <input type="text" id="search-input" placeholder="Search notes..." class="search-input">
+        <button id="export-notes" class="btn btn-secondary">Export Notes</button>
+      </div>
+    </header>
+    
+    <main class="content">
+      <div class="videos-container">
+        <h2>Videos</h2>
+        <div id="video-list" class="video-list">
+          <div class="loading">Loading videos...</div>
+        </div>
+      </div>
+      
+      <div class="notes-container">
+        <div class="notes-header">
+          <h2 id="notes-title">All Notes</h2>
+          <div class="notes-count" id="notes-count">0 notes</div>
+        </div>
+        
+        <div id="notes-list" class="notes-list">
+          <div class="empty-state">Select a video or search for notes</div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="notes.js"></script>
+</body>
+</html>
