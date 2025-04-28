@@ -16,9 +16,9 @@ The YouTube Notes Extension is a powerful Chrome extension that allows you to ad
 4. Click "Load unpacked" and select the extension folder.
 
 ## Screenshots
-![Popup Interface](screenshots/image.png)
-*(Insert Screenshot 2 Here)*  
-*(Insert Screenshot 3 Here)*
+![Popup Interface](screenshots/image1.png)
+![Popup Interface](screenshots/image2.png)
+![Popup Interface](screenshots/image3.png)
 
 ## Usage
 > While watching a YouTube video, click the extension icon to open the popup. Use the interface to add, edit, or delete notes. Notes are automatically saved and synced with the video's page.
