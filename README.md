@@ -34,4 +34,4 @@ This project is licensed under the MIT License.
 
 ---
 
-Developed with ❤️ by [Ashish Rolan] | Last updated: April 28, 2025
+Developed with ❤️ by __Ashish Rolan__ | Last updated: April 28, 2025
